@@ -9,16 +9,10 @@ let y = x+3
 
 if (y>100) {
     console.log ("true");
-} else (y<100) {
+} else {
     console.log ("false");
 }
 
-// if  ((a>b) && (c>d))
-// {
-//     console.log ("true");  
-// }
-// else{
-//     console.log ("false");
-// }
+
 
 
