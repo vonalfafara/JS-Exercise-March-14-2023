@@ -15,7 +15,8 @@ function checkTwoNum(x, y){
 
 // Problem 2 
 function getExtension(fileName){
-    return fileName.split(".")[1];
+    let last = fileName.split(".").length;
+    return fileName.split(".")[last - 1];
 }
 
 // Problem 3
@@ -27,6 +28,6 @@ function getCurrentDate(){
 
 
 console.log(checkTwoNum(100, 2));
-console.log(getExtension("test.txt"))
+console.log(getExtension("test.txt.ts"))
 console.log(getCurrentDate());
 
