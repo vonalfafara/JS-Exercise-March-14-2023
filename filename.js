@@ -7,4 +7,5 @@ function getFileExtension(filename) {
   console.log(getFileExtension('myfile.txt')); 
   console.log(getFileExtension('script.js')); 
   console.log(getFileExtension('document.pdf')); 
+  console.log(getFileExtension('type.d.ts')); 
   
