@@ -1,4 +1,5 @@
 let fileName ="problem2.js"
-let extension = fileName.split(".").pop();
+let splitText= fileName.split(".")
+let  extentsion=splitText.pop()
 
-console.log(extension)
+console.log(splitText)
