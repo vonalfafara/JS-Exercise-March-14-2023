@@ -1,6 +1,6 @@
 // 2. Write a Javascript program to get the extension of a filename.
 
-filename = "system.html"
+filename = "stan.html"
 console.log(filename.split('.').pop());
-filename = "abc.js"
+filename = "stan.js"
 console.log(filename.split('.').pop());
