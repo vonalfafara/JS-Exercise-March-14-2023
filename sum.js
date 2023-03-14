@@ -5,5 +5,8 @@ function checkSum(num1, num2) {
   }
   
   console.log(checkSum(50, 50)); 
+  console.log(checkSum(50, 60)); 
   console.log(checkSum(100, 0)); 
   console.log(checkSum(40, 30)); 
+  console.log(checkSum(75, 25)); 
+  console.log(checkSum(110, -10)); 
