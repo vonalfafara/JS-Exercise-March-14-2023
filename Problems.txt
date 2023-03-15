@@ -45,6 +45,7 @@ const items = [
 ]
 
 function displayForSale(array) {
+  const forSale
   ...
 }
 
