@@ -27,14 +27,12 @@ const items = [
   ]
   
   function displayForSale(array) {
-    array = [];
+    console.log(`Here are the items that are for sale:`);
     for(let i = 0; i < items.length; i++){
-        // console.log(items[i].forSale);
         if(items[i].forSale == true){
-            console.log(array.push(items.item));
+            console.log(items[i].item);
         }
     }
-    
   }
   
   displayForSale(items);
