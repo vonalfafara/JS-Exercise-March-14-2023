@@ -39,3 +39,7 @@ const items = [
 ];
 
 displayItemsForSale(items);
+
+// Book is for sale at $50
+// Pen is for sale at $10
+// Glue is for sale at $5
