@@ -27,13 +27,15 @@ const items = [
   ]
   
   function displayForSale(array) {
-    let forSaleItems = [];
-    for(let i = 0; i < items; i++){
-        if(items.forSale === true){
-            forSaleItems.push(i);
+    array = [];
+    for(let i = 0; i < items.length; i++){
+        // console.log(items[i].forSale);
+        if(items[i].forSale == true){
+            console.log(array.push(items.item));
         }
     }
-    console.log(forSaleItems);
+    
   }
   
   displayForSale(items);
+  //wala napong oras, ang nagpprint lang kung ilang itams ang for sale :-)
