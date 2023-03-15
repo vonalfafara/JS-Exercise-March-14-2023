@@ -33,7 +33,7 @@
   function displayForSale(array) {
   const forSaleItems = array.filter(item => item.forSale);
     for (const item of forSaleItems) {
-      console.log(`${item.item} - ${item.price}`);
+      console.log(`${item.item} - Php${item.price}`);
     }
   }
 
