@@ -1,4 +1,5 @@
 // Write a Javascript function that displays items that are for sale from an array of objects
+
 function displayItemsForSale(items) {
     const forSaleItems = items.filter(item => item.forSale === true);
     for (let i = 0; i < forSaleItems.length; i++) {
@@ -6,7 +7,9 @@ function displayItemsForSale(items) {
     }
 }
 
-// Here's how you can use the function:
+
+// Here's how to use the function:
+
 const items = [
     {
         item: "Book",
