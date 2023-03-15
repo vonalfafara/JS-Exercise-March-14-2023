@@ -5,9 +5,11 @@ const array = [1,2,3,4,5,6,7,8,9]
 const n = 6
 
 
-array.splice (0,n)
+array.splice (n,array.length)
 
 console.log(array)
+
+
 
 // function getElements(array, n) {
     
