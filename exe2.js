@@ -49,6 +49,7 @@ const items = [
   ]
   
   function displayForSale(array) {
-   
+    if
+  }
   
-  displayForSale()
+  displayForSale(items)
