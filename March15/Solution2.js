@@ -30,7 +30,12 @@ function displayForSale(array) {
   let n = array.length
 
   for (let i = 0; i < n; i++) {
-      console.log(array[i].item,array[i].price,array[i].forSale)
+
+    if (array[i].forSale == true) {
+      console.log(array[i].item)
+    }
+
+      // console.log(array[i].item,array[i].price,array[i].forSale)
    }
 }
 
