@@ -1,3 +1,51 @@
-1. Write a Javascript program to check two numbers and return true if one of the numbers is 100 or the sum of both numbers is 100.
-2. Write a Javascript program to get the extension of a filename.
-3. Write a Javascript program to get the current date in a specific format (mm-dd-yyyy, mm/dd/yyyy)
+[Array]
+1. Write a Javascript function that returns the first N items of an array, where N is the number of items. The function must accept 2 parameters: the array and the number of items to be returned.
+
+const array = [...]
+const n = ...
+
+function getElements(array, numberOfItems) {
+  ...
+}
+
+const result = getElements(array, n)
+console.log(result)
+
+
+
+[Array of Objects]
+2. Write a Javascript function that displays items that are for sale from an array of objects.
+
+const items = [
+  {
+    item: "Book",
+    price: 50,
+    forSale: true
+  },
+  {
+    item: "Pen",
+    price: 10,
+    forSale: true
+  },
+  {
+    item: "Paper",
+    price: 25,
+    forSale: false
+  },
+  {
+    item: "Glue",
+    price: 5,
+    forSale: true
+  },
+  {
+    item: "Table",
+    price: 100,
+    forSale: false
+  },
+]
+
+function displayForSale(array) {
+  ...
+}
+
+displayForSale(items)
