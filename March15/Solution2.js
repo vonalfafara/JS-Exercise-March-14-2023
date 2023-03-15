@@ -29,8 +29,8 @@ const items = [
 function displayForSale(array) {
   let n = array.length
 
+  console.log("The following items are for sale:")
   for (let i = 0; i < n; i++) {
-
     if (array[i].forSale == true) {
       console.log(array[i].item)
     }

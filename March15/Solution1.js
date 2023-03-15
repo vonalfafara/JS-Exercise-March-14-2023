@@ -1,5 +1,5 @@
 const array = [10,50,"third string",500,1000,1500, "I'm a string"]
-const n = 3
+const n = 5
 
 function getElements(array, numberOfItems) {
   let deletedArrays
