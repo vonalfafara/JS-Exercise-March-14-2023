@@ -1,7 +1,7 @@
 // [Array of Objects]
 // 2. Write a Javascript function that displays items that are for sale from an array of objects.
 
-const items = [
+const items = [   
     {
       item: "Book",
       price: 50,
@@ -29,13 +29,21 @@ const items = [
     },
   ]
 
-  for (let i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i++) {
     const sale = items[i] 
-    console.log(sale.item)
-  }
-  function displayForSale(array) {
-   
-  }
+    
+
+if (sale.forSale === true){
+    console.log(`${sale.item} : P${sale.price}`)
+}   
+}
+
   
-  displayForSale(items)
+// console.log(`${sale.item} : ${sale.forSale}`)
+  
+//   function displayForSale(array) {
+    
+//   }
+  
+//   displayForSale(items)
 
