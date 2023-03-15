@@ -34,13 +34,13 @@ for (let i = 0; i < items.length; i++) {
     
 
 if (sale.forSale === true){
+    // console.log("item for sale")
     console.log(`${sale.item} : P${sale.price}`)
 }   
 }
 
   
-// console.log(`${sale.item} : ${sale.forSale}`)
-  
+ 
 //   function displayForSale(array) {
     
 //   }
