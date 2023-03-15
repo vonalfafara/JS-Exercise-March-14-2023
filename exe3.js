@@ -6,3 +6,4 @@ const formattedDate1 = `${currentDate.getMonth() + 1}/${currentDate.getDate()}/$
 
 console.log(formattedDate1);
 
+ 
