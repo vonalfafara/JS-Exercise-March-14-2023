@@ -36,7 +36,7 @@ const items = [
     }
   
     for (let i = 0; i < forSaleItems.length; i++) {
-      console.log(`${forSaleItems[i].item}: P${forSaleItems[i].price}`);
+      console.log(`${forSaleItems[i].item}: ₱${forSaleItems[i].price}`);
     }
   }
   

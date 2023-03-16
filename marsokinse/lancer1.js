@@ -1,4 +1,4 @@
-const array = [6, 9, 69, 1, 0, 6,];
+const array = [6, 9, 69, 1, 0, 10,];
 const n = 3;
 
 function getElements(array, numberOfItems) {
