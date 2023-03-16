@@ -29,3 +29,6 @@ const comments = [
         }
         return result;
       }
+
+const result = findCommentsWithLorem(comments);
+console.log(result); // Output: ["this is a lorem", "this activity sucks lorem"]
