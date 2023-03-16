@@ -35,3 +35,10 @@ function displayForSale(array) {
 }
 
 displayForSale(items);
+
+
+const author={
+  name:"carlo"
+  age:"30"
+}
+
