@@ -1,51 +1,28 @@
 [Array]
-1. Write a Javascript function that returns the first N items of an array, where N is the number of items. The function must accept 2 parameters: the array and the number of items to be returned.
-
-const array = [...]
-const n = ...
-
-function getElements(array, numberOfItems) {
-  ...
-}
-
-const result = getElements(array, n)
-console.log(result)
-
-
+Write a function that returns the sum of even positive numbers from an array.
 
 [Array of Objects]
-2. Write a Javascript function that displays items that are for sale from an array of objects.
+Given an array of objects, write a function to return an array of comments that contains the text "lorem"
 
-const items = [
+const comments = [
   {
-    item: "Book",
-    price: 50,
-    forSale: true
+    username: "noobmaster69",
+    comment: "Noob"
   },
   {
-    item: "Pen",
-    price: 10,
-    forSale: true
+    username: "von",
+    comment: "this is a lorem"
   },
   {
-    item: "Paper",
-    price: 25,
-    forSale: false
+    username: "stanley",
+    comment: "this activity sucks lorem"
   },
   {
-    item: "Glue",
-    price: 5,
-    forSale: true
+    username: "jean",
+    comment: "Osmanthus wine"
   },
   {
-    item: "Table",
-    price: 100,
-    forSale: false
+    username: "rey",
+    comment: "i am a smurf"
   },
 ]
-
-function displayForSale(array) {
-  ...
-}
-
-displayForSale(items)
