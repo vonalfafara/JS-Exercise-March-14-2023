@@ -3,23 +3,32 @@
 
 const comments = [
   {
-    username: "noobmaster69",
-    comment: "Noob"
+    username: "pinkbaby",
+    comment: "I'm the OG."
   },
   {
-    username: "von",
-    comment: "this is a lorem"
+    username: "fuchsia88",
+    comment: "No, you're not! You're just basic."
   },
   {
-    username: "stanley",
-    comment: "this activity sucks lorem"
+    username: "BalletSlipper",
+    comment: "Peace, y'all! lorem still prevails."
   },
   {
-    username: "jean",
-    comment: "Osmanthus wine"
+    username: "Taffymuffy",
+    comment: "True! lorem is the best!"
   },
   {
-    username: "rey",
-    comment: "i am a smurf"
+    username: "Magenta",
+    comment: "What even is a lorem?"
   },
 ]
+
+const loremComments = getLoremComments(comments);
+
+function getLoremComments(comments) {
+    return comments.filter(comment => comment.comment.includes("lorem"));
+  }
+
+
+console.log(loremComments);
