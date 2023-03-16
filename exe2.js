@@ -22,3 +22,8 @@ const comments = [
     comment: "i am a smurf"
   },
 ]
+const textWithLorem = findLorem(comments)
+
+const findLorem = (comments) => {
+
+}

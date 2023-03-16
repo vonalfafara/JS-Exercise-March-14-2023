@@ -3,9 +3,9 @@ const numbers = [5, 7, 3, 4, 10, 6];
 
 function sumOfPositveNum(updateNum) {
   let total = 0;
-  
+
   for (let i = 0; i < updateNum.length; i++) {
-    const num = updateNum[i];
+     num = updateNum[i];
     if (num > 0 && num % 2 === 0) {
       total += num;
     }
