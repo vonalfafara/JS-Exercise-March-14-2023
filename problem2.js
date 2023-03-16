@@ -20,12 +20,20 @@ const comments = [
     },
     {
       username: "rey",
-      comment: "i am a smurf"
+      comment: "i am a smurf LOREM"
     },
   ]
 
-function getLorem(lorem) {
-    return lorem.comment === "lorem";
+function commentWithLorem(text) {
+let newArr = [];
+const word = "lorem"
+for(let i = 0; i < text.length; i++){
+    if(text[i].comment.toLowerCase().includes('lorem')){
+        newArr.push(text[i].comment);
+    }
+}
+console.log('Here are the comments that contain the word `lorem`: ');
+console.log(newArr);
 }
 
-console.log(comments.find(getLorem));
+commentWithLorem(comments);
