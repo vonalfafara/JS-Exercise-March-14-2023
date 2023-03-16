@@ -1,4 +1,8 @@
-//  Given an array of objects, write a function to return an array of comments that contains the text "lorem"
+[Array]
+Write a function that returns the sum of even positive numbers from an array.
+
+[Array of Objects]
+Given an array of objects, write a function to return an array of comments that contains the text "lorem"
 
 const comments = [
   {
