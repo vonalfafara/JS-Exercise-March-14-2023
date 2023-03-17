@@ -1,0 +1,42 @@
+html , body {
+    font-family: 'Playfair Display', serif;
+}
+
+#home {
+    background-image: url(../assets/pexels-august-de-richelieu-4427506.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+    #hero-text {
+        --bs-bg-opacity: 75%;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+        padding: 3vh 3vw;
+        border-radius: 35px;
+    }
+}
+
+main {
+    #features {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #how-to {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        #how-to-accordion {
+            #body1 , #body2 , #body3 {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}

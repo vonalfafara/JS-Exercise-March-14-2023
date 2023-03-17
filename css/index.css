@@ -1,0 +1,33 @@
+html, body {
+  font-family: "Playfair Display", serif;
+}
+
+#home {
+  background-image: url(../assets/pexels-rebrand-cities-1367270.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: right;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+#home #hero-text {
+  --bs-bg-opacity: 75%;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  padding: 3vh 3vw;
+  border-radius: 35px;
+}
+
+#about img {
+  height: 100vh;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+#history img {
+  height: 90vh;
+}
+
+footer {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}/*# sourceMappingURL=index.css.map */

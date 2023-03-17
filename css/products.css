@@ -1,0 +1,44 @@
+html, body {
+  font-family: "Playfair Display", serif;
+}
+
+#home {
+  background-image: url(../assets/pexels-shvets-production-7544803.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+#home #hero-text {
+  --bs-bg-opacity: 75%;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  padding: 3vh 3vw;
+  border-radius: 35px;
+}
+
+#personal {
+  padding-bottom: 3vh;
+}
+#personal p {
+  font-weight: 500;
+}
+
+#sme {
+  padding-bottom: 3vh;
+}
+#sme p {
+  font-weight: 500;
+}
+
+#corporate {
+  padding-bottom: 3vh;
+}
+#corporate p {
+  font-weight: 500;
+}
+
+footer {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}/*# sourceMappingURL=products.css.map */

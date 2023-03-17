@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SME Loan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/sme-loan.css" />
+</head>
+<body>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-title">Menu</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="accordion navbar-nav" id="accordionMenu">
+        <li class="nav-item">
+            <a href="./index.html" class="nav-link" data-bs-dismiss="offcanvas">Home</a>
+        </li>
+        <li class="nav-item">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#personalBanking" aria-expanded="false" aria-controls="personalBanking">
+            Personal Banking
+            </button>
+            <div id="personalBanking" class="accordion-collapse collapse" aria-labelledby="personalBanking">
+            <ul class="navbar-nav">
+                <li><a href="./savings.html" class="nav-link">Savings Account</a></li>
+                <li><a href="./checking.html" class="nav-link">Checking Account</a></li>
+                <li><a href="./time-deposit.html" class="nav-link">Time Deposit</a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#smeBanking" aria-expanded="false" aria-controls="smeBanking">
+            SME Banking
+            </button>
+            <div id="smeBanking" class="accordion-collapse collapse" aria-labelledby="smeBanking">
+            <ul class="navbar-nav">
+                <li><a href="./start-up.html" class="nav-link">Start-Up Loan</a></li>
+                <li><a href="./sme-loan.html" class="nav-link">SME Loan</a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#corporateBanking" aria-expanded="false" aria-controls="corporateBanking">
+            Corporate Banking
+            </button>
+            <div id="corporateBanking" class="accordion-collapse collapse" aria-labelledby="corporateBanking">
+            <ul class="navbar-nav">
+                <li><a href="./long-term.html" class="nav-link">Long-Term Loan</a></li>
+                <li><a href="./executive.html" class="nav-link">Executive Services</a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#contact-us" class="nav-link" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#contact-us">Contact Us</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-primary">
+    <div class="container">
+        <div class="row justify-content-between align-items-center w-100">
+        <div class="col">
+            <a href="./index.html" class="navbar-brand text-light fs-2">Stronghold Bank</a>
+        </div>
+        <div class="col">
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                <a
+                    href="#about"
+                    class="nav-link dropdown-toggle text-light"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Personal Banking</a
+                >
+                <ul class="dropdown-menu">
+                    <li>
+                    <a href="./savings.html" class="dropdown-item">Savings Account</a>
+                    </li>
+                    <li>
+                    <a href="./checking.html" class="dropdown-item">Checking Account</a>
+                    </li>
+                    <li>
+                    <a href="./time-deposit.html" class="dropdown-item">Time Deposit</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a
+                    href="#about"
+                    class="nav-link dropdown-toggle text-light"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >SME Banking</a
+                >
+                <ul class="dropdown-menu">
+                    <li>
+                    <a href="./start-up.html" class="dropdown-item">Start-Up Loan</a>
+                    </li>
+                    <li>
+                    <a href="./sme-loan.html" class="dropdown-item">SME Loan</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a
+                    href="#about"
+                    class="nav-link dropdown-toggle text-light"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Corporate Banking</a
+                >
+                <ul class="dropdown-menu">
+                    <li>
+                    <a href="./long-term.html" class="dropdown-item">Long-Term Loan</a>
+                    </li>
+                    <li>
+                    <a href="./executive.html" class="dropdown-item">Executive Services</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a href="#contact-us" class="nav-link text-light" data-bs-toggle="modal" data-bs-target="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="col d-lg-none d-flex justify-content-end">
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+            aria-controls="sidebar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="container hero d-flex align-items-center justify-content-center justify-content-lg-end">
+              <div class="row">
+                <div class="col d-flex flex-column text-center mb-4 text-md-start mb-md-0" id="hero-text">
+                  <h1>SME Loan</h1>
+                  <h5 class="mb-4" style="font-weight: 500;">Propel your business to even greater heights</h5>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="bg-info" id="features">
+            <h3 class="text-center text-black">Features</h3>
+            <div class="container features d-flex flex-wrap align-items-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-9 col-md-6 text-black row align-items-center" style="font-weight: 500;">
+                        <p style="font-weight: 500;">
+                            Stronghold Bank helps established SMEs finance their operations, expand their services, or invest in new equipment. We offer competitive interest rates and flexible repayment terms to our loyal clients who have established a positive credit history. With this type of loan, businesses can access funding quickly and easily, without the hassle of having to start a new application from scratch. We offer customized loan options to suit the specific needs of our business customers, with financing amounts and repayment schedules highly favorable to the circumstances of each business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="how-to" class="text-center">
+            <h3 class="pt-4 text-black">How to Apply for a Loan</h3>
+            <div class="row justify-content-center w-100">
+              <div class="col-12 col-sm-9 col-md-6">
+                <div class="accordion" id="how-to-accordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#body1" aria-expanded="true" aria-controls="body1">
+                        <strong>Step 1: Fill Out the Form</strong>
+                      </button>
+                    </h2>
+                    <div id="body1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+                      <div class="accordion-body text-start">
+                        <strong>
+                            <p><a href="#apply-loan" class="nav-link text-primary" data-bs-toggle="modal" data-bs-target="#apply-loan">Click here to apply for a loan.</a></p>
+                            <p>We will call you to confirm your appointment to our nearest branch.</p>
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body2" aria-expanded="false" aria-controls="body2">
+                        <strong>Step 2: Submit the Requirements</strong>
+                      </button>
+                    </h2>
+                    <div id="body2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                      <div class="accordion-body text-start">
+                        <strong>
+                            <p>Go to your nearest Stronghold Bank branch and submit the following requirements:</p>
+                            <p>1. Valid ID<br>2. 2x2 Picture<br>3. Amount to be Loaned<br>4. Purpose of Loan</p>
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body3" aria-expanded="false" aria-controls="body3">
+                        <strong>Step 3: Get Approved</strong>
+                      </button>
+                    </h2>
+                    <div id="body3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                      <div class="accordion-body text-start">
+                        <strong>
+                            If everything is in order, you will get a decision on your loan. We can guarantee that getting a decision will take no more than three (3) business days.
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        </main>
+    <footer class="bg-primary text-light">
+        <div class="container footer">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
+              <h3>Stronghold Bank</h3>
+            </div>
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-around">
+              <div><a href="#" class="text-white" style="text-decoration: none;">Facebook</a></div>
+              <div><a href="#" class="text-white" style="text-decoration: none;">Instagram</a></div>
+              <div><a href="#" class="text-white" style="text-decoration: none;">Twitter</a></div>
+              <div><a href="#" class="text-white" style="text-decoration: none;">YouTube</a></div>
+            </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-end">
+              <p class="m-0">&copy; Stronghold LLC. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <div
+    class="modal fade"
+    id="contact-us"
+    tabindex="-1"
+    aria-labelledby="Contact Us"
+    aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h3 class="modal-title">Contact Us</h3>
+                </div>
+                <form>
+                    <div class="mb-3 mx-2">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" />
+                    </div>
+                    <div class="mb-3 mx-2">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" />
+                    </div>
+                    <div class="mb-3 mx-2">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        class="form-control"
+                    ></textarea>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button class="btn btn-light" data-bs-dismiss="modal">
+                    Cancel
+                    </button>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+    class="modal fade"
+    id="apply-loan"
+    tabindex="-1"
+    aria-labelledby="Apply for a Loan"
+    aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h3 class="modal-title">Apply for a loan now.</h3>
+          </div>
+          <form>
+            <div class="mb-3 mx-2">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="mb-3 mx-2">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+            <div class="mb-3 mx-2">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                cols="30"
+                rows="10"
+                class="form-control"
+              ></textarea>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button class="btn btn-light" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
