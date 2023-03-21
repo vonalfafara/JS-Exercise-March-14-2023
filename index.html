@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+git <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,8 +25,21 @@
       </div>
     </header>
     <script>
-      // Start!
-      // ...
+const menu = document.getElementById('menu');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav a');
+
+menu.addEventListener('click', function() {
+  menu.classList.toggle('open');
+  nav.classList.toggle('open');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    menu.classList.remove('open');
+    nav.classList.remove('open');
+  });
+});
     </script>
   </body>
 </html>
