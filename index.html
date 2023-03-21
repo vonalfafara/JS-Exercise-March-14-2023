@@ -25,8 +25,34 @@
       </div>
     </header>
     <script>
-      // Start!
-      // ...
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll("nav a");
+const hamburger= document.querySelector(".menu.line");
+const closeIcon= document.querySelector("nav.open");
+const menuIcon = document.querySelector("#menu");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+const menuItems = document.querySelectorAll("nav a");
+
+menuItems.forEach( 
+  function(nav a) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
     </script>
   </body>
 </html>
