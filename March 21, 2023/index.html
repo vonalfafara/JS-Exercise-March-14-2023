@@ -25,37 +25,40 @@
       </div>
     </header>
     <script>
-        let ul = document.querySelectorAll("a");
-        // console.log(ul);
-        let navList = [];
-        navList.push(document.querySelectorAll("a"))
-        // console.log(list);
-        for(i = 0; i < navList.length; i++){
-            let list = document.createElement("li");
-            list.innerHTML = navList[i];
-           
-        }
+        // let newUl = document.createElement("ul");
+        // console.log(document);
+        // let ul = document.querySelectorAll("a");
+        // // console.log(ul);
+        // let navList = [];
+        // navList.push(document.querySelectorAll("a"))
+        // // console.log(list);
+        // for(i = 0; i < navList.length; i++){
+        //     let list = document.createElement("li");
+        //     list.innerHTML = navList[i];
+        //     console.log(navList[i]);
+        // }
         
         //di na matapos
 
-        // const hamburger = document.querySelector(".menu");
-        // const navMenu = document.querySelector("a");
+        const hamburger = document.querySelector(".menu");
+        console.log(hamburger);
+        const navMenu = document.querySelector("a");
 
-        // hamburger.addEventListener("click", mobileMenu);
+        hamburger.addEventListener("click", mobileMenu);
 
-        // function mobileMenu() {
-        //     hamburger.classList.toggle("active");
-        //     navMenu.classList.toggle("active");
-        // }
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
 
-        // const navLink = document.querySelectorAll("a");
+        const navLink = document.querySelectorAll("a");
 
-        // navLink.forEach(n => n.addEventListener("click", closeMenu));
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-        // function closeMenu() {
-        // hamburger.classList.remove("active");
-        // navMenu.classList.remove("active");
-        // }
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        }
 
     </script>
   </body>
