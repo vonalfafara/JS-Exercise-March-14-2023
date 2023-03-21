@@ -25,23 +25,20 @@
     </div>
 </header>
 <script>
-    // Start!
-    // ...
-    const menu = document.querySelector("#menu")
-    const nav = document.querySelector("nav")
-    const anchors = nav.querySelectorAll("a")
+    const menu = document.getElementById("menu");
+    const nav = document.querySelector("nav");
 
     menu.addEventListener("click", () => {
-        menu.classList.toggle("open")
-        nav.classList.toggle("open")
-    })
+        menu.classList.toggle("open");
+        nav.classList.toggle("open");
+    });
 
-    anchors.forEach((a) => {
-        a.addEventListener("click", () => {
-            menu.classList.remove("open")
-            nav.classList.remove("open")
-        })
-    })
+    nav.querySelectorAll("a").forEach((item) => {
+        item.addEventListener("click", () => {
+            menu.classList.remove("open");
+            nav.classList.remove("open");
+        });
+    });
 </script>
 </body>
 </html>
