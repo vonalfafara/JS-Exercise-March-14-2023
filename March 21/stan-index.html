@@ -28,10 +28,10 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
       </div>
     </header>
     <script>
-    let menutab = document.getElementById("menu")
+    let menutab = document.getElementsByClassName("menu")
     let container = document.getElementsByClassName("container")
     menutab.addEventListener("click", function(){
-        show(container)
+        show()
     })
 
     let home = document.getElementsByName ("Home")
