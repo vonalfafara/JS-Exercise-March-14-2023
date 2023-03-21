@@ -6,4 +6,4 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
 
 
 To do:
-Make use of nav.open, replace line with href, and make it close on click
+Make use of 'nav.open', replace 'line' with href, and make it close on click
