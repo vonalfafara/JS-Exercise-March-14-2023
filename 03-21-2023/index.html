@@ -5,37 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-
 <!-- DO NOT MODIFY -->
 <header>
     <div class="container">
         <span>LOGO</span>
-        <nav id="mySidebar">
-            <a href="#" onclick="closeNav()">Home</a>
-            <a href="#" onclick="closeNav()">About Us</a>
-            <a href="#" onclick="closeNav()">Contact</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
         </nav>
-        <div class="menu" id="menu" onclick="openNav()">
+        <div class="menu" id="menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </div>
 </header>
-
 <script>
-    // Open and close sidebar
-    function openNav() {
-        document.getElementById("mySidebar").style.width = "60%";
-        document.getElementById("mySidebar").style.display = "block";
-    }
+    // Start!
+    // ...
+    const menu = document.querySelector("#menu")
+    const nav = document.querySelector("nav")
+    const anchors = nav.querySelectorAll("a")
 
-    function closeNav() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
+    menu.addEventListener("click", () => {
+        menu.classList.toggle("open")
+        nav.classList.toggle("open")
+    })
+
+    anchors.forEach((a) => {
+        a.addEventListener("click", () => {
+            menu.classList.remove("open")
+            nav.classList.remove("open")
+        })
+    })
 </script>
 </body>
 </html>
