@@ -25,8 +25,17 @@
       </div>
     </header>
     <script>
-      // Start!
-      // ...
+      const menu =  document.getElementById('.menu');
+
+      const nav = document.getElementById('.nav');
+      menu.onclick = function() {
+        menu.classlist.toggle('open');
+        nav.classList.toggle('open');
+      }
+      
+
+
     </script>
+
   </body>
 </html>
