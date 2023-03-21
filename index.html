@@ -25,19 +25,19 @@ git <!DOCTYPE html>
       </div>
     </header>
     <script>
-const menu = document.getElementById('menu');
-const nav = document.querySelector('nav');
-const navLinks = document.querySelectorAll('nav a');
+const menu = document.querySelector("#menu");
+const nav = document.querySelector("nav");
+const anchors = nav.querySelectorAll("nav a");
 
-menu.addEventListener('click', function() {
-  menu.classList.toggle('open');
-  nav.classList.toggle('open');
+menu.addEventListener("click", function() {
+  menu.classList.toggle("open");
+  nav.classList.toggle("open");
 });
 
-navLinks.forEach(function(link) {
-  link.addEventListener('click', function() {
-    menu.classList.remove('open');
-    nav.classList.remove('open');
+anchors.forEach((a) => {
+  a.addEventListener('click', function() {
+    menu.classList.remove("open");
+    nav.classList.remove("open");
   });
 });
     </script>
