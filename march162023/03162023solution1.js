@@ -1,43 +1,20 @@
+18 lines (13 sloc)  426 Bytes
 
+// Write a function that returns the sum of even positive numbers from an array.
 
-//const firstThreeItems = returnFirstNItems(myArray, 3);
+function sumEvenPositiveNumbers(array) {
+    let sum = 0;
 
-//console.log(firstThreeItems);
-
-  
-
-
-const comments = [
-    {
-      username: "noobmaster69",
-      comment: "Noob"
-    },
-    {
-      username: "von",
-      comment: "this is a lorem"
-    },
-    {
-      username: "stanley",
-      comment: "this activity sucks lorem"
-    },
-    {
-      username: "jean",
-      comment: "Osmanthus wine"
-    },
-    {
-      username: "rey",
-      comment: "i am a smurf"
-    },
-  ]
-
-  function displaycomment(array) {
-    for (let index = 0; index < array.length; index++) {
-      if (array[index].comment == true) {
-        console.log(
-          `${array[index].username} ${array[index].comment}`
-        )
-      }
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 0 && array[i] % 2 === 0) {
+            sum += array[i];
+        }
     }
-  }
-  
-  displaycomment(comments)
+
+    return sum;
+}
+
+// testing
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(sumEvenPositiveNumbers(arr)); // Output: 20 (2 + 4 + 6 + 8)
