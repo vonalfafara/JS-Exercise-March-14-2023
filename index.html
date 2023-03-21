@@ -25,8 +25,26 @@
       </div>
     </header>
     <script>
-      // Start!
-      // ...
+      const navigation = document.querySelector("nav")
+      const burgerMenu = document.querySelectorAll(".line")
+      const anchorTags = document.querySelectorAll("a")
+
+      const toggleNav = () => {
+        navigation.classList.toggle("open")
+      }
+
+      const closeNav = () => {
+        navigation.classList.remove("open")
+      }
+
+      burgerMenu.forEach((line) => {
+        line.addEventListener("click", toggleNav)
+      })
+
+      anchorTags.forEach((a) => {
+        a.addEventListener("click", closeNav)
+      })
+
     </script>
   </body>
 </html>
