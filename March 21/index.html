@@ -24,15 +24,23 @@
         </div>
       </div>
     </header>
-    <script>
-     
-        const menuBar = document.getElementById('menu');
-        const navItem = document.querySelector('nav');
+  <script>
 
-        menuBar.addEventListener(click,function()){
-          nav.classList.toggle("open")
-        }
-          
-    </script>
+    const menu = document.querySelector("#menu")
+    const nav = document.querySelector("nav")
+    const anchors = nav.querySelectorAll("a")
+    
+    menu.addEventListener("click", () =>{
+      menu.classList.toggle("open")
+      nav.classList.toggle("open")
+    })
+    anchors.forEach((a) =>{
+      a.addEventListener("click"), () =>{
+        menu.classList.remove("open")
+        nav.classList.remove("open")
+      }
+    })
+
+  </script>  
   </body>
 </html>
