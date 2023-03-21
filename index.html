@@ -26,21 +26,6 @@
     </header>
     <script>
       // Start!
-      let menu = document.querySelector("#menu")
-      let nav = document.querySelector("nav")
-      let a = nav.querySelectorAll("a")
-
-      menu.addEventListener("click", () => {
-        menu.classList.toggle("open")
-        nav.classList.toggle("open")
-      })
-
-      a.forEach(function (anchor) {
-        anchor.addEventListener("click", () => {
-          menu.classList.remove("open")
-          nav.classList.remove("open")
-        })
-      })
     </script>
   </body>
 </html>
