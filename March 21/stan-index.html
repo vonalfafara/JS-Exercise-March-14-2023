@@ -50,7 +50,7 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
     
       const menu = document.querySelector("#menu")
       const nav = document.querySelector("nav")
-      const links = document.querySelectorAll("a")
+      const anchors = document.querySelectorAll("a")
 
         function toggleNavbar() {
           menu.classList.toggle("open")
@@ -59,7 +59,7 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
 
         menu.addEventListener("click", toggleNavbar);
 
-        links.forEach((link) => {
+        anchors.forEach((link) => {
           link.addEventListener("click", () => {
             menu.classList.remove("open")
             nav.classList.remove("open")
