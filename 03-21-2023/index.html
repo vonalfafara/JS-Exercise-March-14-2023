@@ -25,16 +25,23 @@
     </div>
 </header>
 <script>
+    // select the menu and the navigation elements using the getElementById and querySelector methods
     const menu = document.getElementById("menu");
     const nav = document.querySelector("nav");
 
+    // add an event listener to the menu element, so that when it is clicked,
+    // the open class is toggled on both the menu and navigation elements using the classList.toggle method
     menu.addEventListener("click", () => {
         menu.classList.toggle("open");
         nav.classList.toggle("open");
     });
 
+    // select all the anchor tags inside the navigation element using the querySelectorAll method
+    // and loop through them using the forEach method
     nav.querySelectorAll("a").forEach((item) => {
         item.addEventListener("click", () => {
+            // For each anchor tag, we add an event listener so that when it is clicked,
+            // the open class is removed from both the menu and navigation elements using the classList.remove method
             menu.classList.remove("open");
             nav.classList.remove("open");
         });
