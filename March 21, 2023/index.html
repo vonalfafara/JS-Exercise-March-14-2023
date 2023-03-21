@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- DO NOT MODIFY -->
+    <header>
+      <div class="container">
+        <span>LOGO</span>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="menu" id="menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+    <script>
+        let ul = document.querySelectorAll("a");
+        // console.log(ul);
+        let navList = [];
+        navList.push(document.querySelectorAll("a"))
+        // console.log(list);
+        for(i = 0; i < navList.length; i++){
+            let list = document.createElement("li");
+            list.innerHTML = navList[i];
+           
+        }
+        
+        //di na matapos
+
+        // const hamburger = document.querySelector(".menu");
+        // const navMenu = document.querySelector("a");
+
+        // hamburger.addEventListener("click", mobileMenu);
+
+        // function mobileMenu() {
+        //     hamburger.classList.toggle("active");
+        //     navMenu.classList.toggle("active");
+        // }
+
+        // const navLink = document.querySelectorAll("a");
+
+        // navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        // function closeMenu() {
+        // hamburger.classList.remove("active");
+        // navMenu.classList.remove("active");
+        // }
+
+    </script>
+  </body>
+</html>
