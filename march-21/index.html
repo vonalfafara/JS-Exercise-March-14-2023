@@ -26,23 +26,17 @@
     </header>
     <script>
       const navigation = document.querySelector("nav")
-      const burgerMenu = document.querySelectorAll(".line")
+      const burgerMenu = document.querySelector("#menu")
       const anchorTags = document.querySelectorAll("a")
 
-      const toggleNav = () => {
+      burgerMenu.addEventListener("click", () => {
         navigation.classList.toggle("open")
-      }
-
-      const closeNav = () => {
-        navigation.classList.remove("open")
-      }
-
-      burgerMenu.forEach((line) => {
-        line.addEventListener("click", toggleNav)
       })
 
       anchorTags.forEach((a) => {
-        a.addEventListener("click", closeNav)
+        a.addEventListener("click", () => {
+          navigation.classList.remove("open")
+        })
       })
 
     </script>
