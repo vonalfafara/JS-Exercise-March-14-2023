@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- DO NOT MODIFY -->
+<header>
+    <div class="container">
+        <span>LOGO</span>
+        <nav id="mySidebar">
+            <a href="#" onclick="closeNav()">Home</a>
+            <a href="#" onclick="closeNav()">About Us</a>
+            <a href="#" onclick="closeNav()">Contact</a>
+        </nav>
+        <div class="menu" id="menu" onclick="openNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</header>
+
+<script>
+    // Open and close sidebar
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+</body>
+</html>
