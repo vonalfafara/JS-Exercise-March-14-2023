@@ -24,9 +24,17 @@
         </div>
       </div>
     </header>
+
     <script>
-      // Start!
-      // ...
+
+      const menuBtn = document.getElementById('menu');
+      const nav = document.querySelector('nav');
+
+      menuBtn.addEventListener('click', () => {nav.classList.toggle('show');});
+
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach((link) => {link.addEventListener('click', () => {nav.classList.remove('show');});});
+
     </script>
   </body>
 </html>
