@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- DO NOT MODIFY -->
+    <!-- [DOM Manipulation]
+Write a Javascript code that can open and close a navigation bar. The anchor tags inside must also close the navigation bar on click. -->
+    <header>
+      <div class="container">
+        <span>LOGO</span>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="menu" id="menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+    <script>
+      // Start!
+        const menu = document.getElementById('menu');
+        const container = document.querySelector('.container');
+        const nav = container.querySelector('nav');
+
+        menu.addEventListener('click', () => {
+        console.log('menu clicked');
+        menu.classList.toggle('open');
+        nav.classList.toggle('open');
+        });
+
+        const navLinks = container.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            console.log('link clicked');
+            menu.classList.remove('open');
+            nav.classList.remove('open');
+        });
+        });
+
+
+
+      // ...
+    </script>
+  </body>
+</html>

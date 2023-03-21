@@ -12,11 +12,11 @@ const comments = [
   },
   {
     username: "BalletSlipper",
-    comment: "Peace, y'all! lorem still prevails."
+    comment: "Peace, y'all! Lorem still prevails."
   },
   {
     username: "Taffymuffy",
-    comment: "True! lorem is the best!"
+    comment: "True! Lorem is the best!"
   },
   {
     username: "Magenta",
@@ -27,8 +27,9 @@ const comments = [
 const loremComments = getLoremComments(comments);
 
 function getLoremComments(comments) {
-    return comments.filter(comment => comment.comment.includes("lorem"));
+    return comments.filter(comment => comment.comment.toLowerCase().includes("lorem"));
   }
+  
 
 
 console.log(loremComments);
