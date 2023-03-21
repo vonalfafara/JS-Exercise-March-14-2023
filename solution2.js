@@ -27,8 +27,20 @@ const items = [
   ]
   
   function displayForSale(array) {
-   
+    array.forEach(item => {
+        if(item.forSale == true)  console.log("This is for sale: "+ item.item + " \t \t Price: " + item.price)
+
+        if (item.forSale == false)  console.log("This is not for sale: "+ item.item + " \t \t Price: " + item.price)
+
+
+        console.log("all the items:" + item.item + "  \t \t price: " + item.price )
+     });
+
+
   }
+
+
+  
   
   displayForSale(items)
   
