@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- DO NOT MODIFY -->
+    <header>
+      <div class="container">
+        <span>LOGO</span>
+        <nav id="navbar">
+          <a id="anchors" href="#">Home</a>
+          <a id="anchors" href="#">About Us</a>
+          <a id="anchors" href="#">Contact</a>
+        </nav>
+        <div onclick="bergerClick()" class="menu" id="menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+    <script>
+      // PS. NOT THE SHORTEST POSSIBLE CODE BUT WORKS <3
+      document.getElementById("menu").onclick = function() {
+        if (document.getElementById("navbar").style.right == '-248px') {
+          document.getElementById("navbar").style.right = 0
+        } else {
+          document.getElementById("navbar").style.right = '-248px'
+        }
+      }
+
+      document.getElementsByTagName("a")[0].onclick = function() {
+        document.getElementById("navbar").style.right = '-248px'
+      }
+      document.getElementsByTagName("a")[1].onclick = function() {
+        document.getElementById("navbar").style.right = '-248px'
+      }
+      document.getElementsByTagName("a")[2].onclick = function() {
+        document.getElementById("navbar").style.right = '-248px'
+      }
+
+      // function clickEvents() {
+      //   if (document.getElementById("navbar").style.right == '-248px') {
+      //     document.getElementById("navbar").style.right = 0
+      //   } else {
+      //     document.getElementById("navbar").style.right = '-248px'
+      //   }
+
+
+      // }
+    </script>
+  </body>
+</html>
