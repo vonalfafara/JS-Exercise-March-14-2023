@@ -27,6 +27,21 @@
     <script>
       // Start!
       // ...
+      const menu = document.querySelector("#menu")
+      const nav = document.querySelector("nav")
+      const anchors = nav.querySelectorAll("a")
+
+      menu.addEventListener("click", () => {
+        menu.classList.toggle("open")
+        nav.classList.toggle("open")
+      })
+
+      anchors.forEach((a) => {
+        a.addEventListener("click", () => {
+          menu.classList.remove("open")
+          nav.classList.remove("open")
+        })
+      })
     </script>
   </body>
 </html>
