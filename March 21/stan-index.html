@@ -28,42 +28,43 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
       </div>
     </header>
     <script>
-    let menu = document.getElementsByClassName("menu")
-    let container = document.getElementsByClassName("container")
-    menu.addEventListener("click", function(){
-        show()
-    })
+    // let menu = document.getElementsByClassName("menu")
+    // let container = document.getElementsByClassName("container")
+    // menu.addEventListener("click", function(){
+    //     show()
+    // })
 
-    let home = document.getElementsByName ("Home")
-    home.addEventListener("click", function(){
-        close
-    })
-    let aboutus = document.getElementsByName ("About Us")
-    aboutus.addEventListener("click", function(){
-        close
-    })
-    let contact = document.getElementsByName ("Contact")
-    contact.addEventListener("click", function(){
-        close
-    })
+    // let home = document.getElementsByName ("Home")
+    // home.addEventListener("click", function(){
+    //     close
+    // })
+    // let aboutus = document.getElementsByName ("About Us")
+    // aboutus.addEventListener("click", function(){
+    //     close
+    // })
+    // let contact = document.getElementsByName ("Contact")
+    // contact.addEventListener("click", function(){
+    //     close
+    // })
 
-    // const menu = document.getElementById("menu")
-    //   const nav = document.querySelector("nav")
-    //   const links = document.querySelectorAll("nav a")
+    
+      const menu = document.querySelector("#menu")
+      const nav = document.querySelector("nav")
+      const links = document.querySelectorAll("a")
 
-    //     function toggleNavbar() {
-    //       menu.classList.toggle("open")
-    //       nav.classList.toggle("open")
-    //     }
+        function toggleNavbar() {
+          menu.classList.toggle("open")
+          nav.classList.toggle("open")
+        }
 
-    //     menu.addEventListener("click", toggleNavbar);
+        menu.addEventListener("click", toggleNavbar);
 
-    //     links.forEach((link) => {
-    //       link.addEventListener("click", () => {
-    //         menu.classList.remove("open")
-    //         nav.classList.remove("open")
-    //       })
-    //     })
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            menu.classList.remove("open")
+            nav.classList.remove("open")
+          })
+        })
     </script>
   </body>
 </html>
