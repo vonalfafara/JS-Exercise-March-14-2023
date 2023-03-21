@@ -1,2 +1,0 @@
-[DOM Manipulation]
-Write a Javascript code that can open and close a navigation bar. The anchor tags inside must also close the navigation bar on click.
