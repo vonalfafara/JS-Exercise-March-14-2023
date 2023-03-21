@@ -15,7 +15,7 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
     <header>
       <div class="container">
         <span>LOGO</span>
-        <nav id="navmenu">
+        <nav>
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Contact</a>
@@ -28,9 +28,9 @@ Write a Javascript code that can open and close a navigation bar. The anchor tag
       </div>
     </header>
     <script>
-    let menutab = document.getElementsByClassName("menu")
+    let menu = document.getElementsByClassName("menu")
     let container = document.getElementsByClassName("container")
-    menutab.addEventListener("click", function(){
+    menu.addEventListener("click", function(){
         show()
     })
 
