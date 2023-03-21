@@ -30,10 +30,10 @@
       const menuBtn = document.getElementById('menu');
       const nav = document.querySelector('nav');
 
-      menuBtn.addEventListener('click', () => {nav.classList.toggle('show');});
+      menuBtn.addEventListener('click', () => {nav.classList.toggle('open');});
 
       const navLinks = document.querySelectorAll('nav a');
-      navLinks.forEach((link) => {link.addEventListener('click', () => {nav.classList.remove('show');});});
+      navLinks.forEach((link) => {link.addEventListener('click', () => {nav.classList.remove('open');});});
 
     </script>
   </body>
