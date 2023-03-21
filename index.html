@@ -25,8 +25,32 @@
       </div>
     </header>
     <script>
-      // Start!
-      // ...
+     
+     const hamburger = document.querySelector('.menu');
+     hamburger.addEventListener('click', () => {
+     hamburger.classList.toggle('open');
+     });
+
+     menu.addEventListener('click', () => {
+     nav.classList.toggle('active');
+     });
+
+     // Close the navigation bar when any of the anchor tags inside it are clicked
+     const navLinks = nav.querySelectorAll('a');
+
+     navLinks.forEach(link => {
+     link.addEventListener('click', () => {
+     nav.classList.remove('active');
+     });
+     });
+
+     
+     //const hamburger = document.querySelector('.menu');
+     //hamburger.addEventListener('click', () => {
+     //hamburger.classList.toggle('open');
+     //});
+    
     </script>
   </body>
 </html>
+
