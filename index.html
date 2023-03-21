@@ -25,8 +25,23 @@
       </div>
     </header>
     <script>
-      // Start!
-      // ...
+      const menu = document.getElementById("menu")
+      const nav = document.querySelector("nav")
+      const links = document.querySelectorAll("nav a")
+
+        function toggleNavbar() {
+          menu.classList.toggle("open")
+          nav.classList.toggle("open")
+        }
+
+        menu.addEventListener("click", toggleNavbar);
+
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            menu.classList.remove("open")
+            nav.classList.remove("open")
+          })
+        })
     </script>
   </body>
 </html>
