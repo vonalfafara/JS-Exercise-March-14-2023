@@ -42,13 +42,15 @@
 
         const hamburger = document.querySelector(".menu");
         console.log(hamburger);
-        const navMenu = document.querySelector("a");
+        const navMenu = document.querySelectorAll("a");
+        console.log(navMenu);
 
         hamburger.addEventListener("click", mobileMenu);
 
         function mobileMenu() {
             hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
+            // navMenu.classList.toggle("active");
+            navMenu.forEach(x => x.classList.toggle("active"))
         }
 
         const navLink = document.querySelectorAll("a");
@@ -56,8 +58,8 @@
         navLink.forEach(n => n.addEventListener("click", closeMenu));
 
         function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
         }
 
     </script>
